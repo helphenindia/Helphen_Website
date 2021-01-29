@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Helphen India</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO"/>
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"/>
-    <meta name="author" content="FREEHTML5.CO"/>
+    <meta name="description" content="Helphen India Website"/>
+    <meta name="keywords" content="Helphen India Website, Helphen, Helphen India, Helfen"/>
+    <meta name="author" content="Helphen India Web Development Team"/>
 
 
     <!-- Facebook and Twitter integration -->
@@ -30,6 +30,10 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
 
@@ -52,29 +56,6 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIe79xbyEOaA7KgogqEOOlbwUOnRxXzwE&callback=initMap&libraries=&v=weekly"
-            defer></script>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Ulur
-            // lat = 12.969173012035432
-            // lng = 79.15585925727072
-            const uluru = {lat: 12.969173012035432, lng: 79.15585925727072};
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-                icon: 'images/loc.png'
-            });
-        }
-    </script>
 
 </head>
 <body>
@@ -102,7 +83,7 @@
                 <div class="nav-header">
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
                     <h1 id="fh5co-logo"><a href="index.html"><img src="images/helphen%20India%20logo.png"
-                                                                  alt="logo" height="60px" width="60px"></a></h1>
+                                                                  alt="logo"></a></h1>
                     <!-- START #fh5co-menu-wrap -->
                     <nav id="fh5co-menu-wrap" role="navigation">
                         <ul class="sf-menu" id="fh5co-primary-menu">
@@ -112,18 +93,18 @@
                             <li>
                                 <a href="#" class="fh5co-sub-ddown">Our Works</a>
                                 <ul class="fh5co-sub-menu">
-                                    <li><a href="#">Events</a></li>
+                                    <li><a href="events.html">Events</a></li>
                                     <li><a href="cyclothon.html">Cyclothon</a></li>
-                                    <li><a href="#">Marathon</a></li>
-                                    <li><a href="#">Raahat</a></li>
+                                    <li><a href="marathon.html">Marathon</a></li>
+                                    <li><a href="raahat.html">Raahat</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#" class="fh5co-sub-ddown">Projects</a>
                                 <ul class="fh5co-sub-menu">
-                                    <li><a href="#">Project Kinder</a></li>
-                                    <li><a href="#">Project Prayaas</a></li>
-                                    <li><a href="#">Project Unnavu</a></li>
+                                    <li><a href="project_kinder.html">Project Kinder</a></li>
+                                    <li><a href="project_prayaas.html">Project Prayaas</a></li>
+                                    <li><a href="project_unavu.html">Project Unavu</a></li>
                                 </ul>
                             </li>
                             <li><a href="gallery.html">Gallery</a></li>
@@ -182,7 +163,7 @@
                     </div>
                     <!-- AddToAny BEGIN -->
                     <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style"
-                         style="bottom:0px; right:0px;">
+                         style="bottom:0; right:0;">
                         <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                         <a class="a2a_button_facebook"></a>
                         <a class="a2a_button_twitter"></a>
@@ -226,6 +207,30 @@
 
 <!-- Main JS -->
 <script src="js/main.js"></script>
+
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIe79xbyEOaA7KgogqEOOlbwUOnRxXzwE&callback=initMap&libraries=&v=weekly"
+        defer></script>
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Ulur
+        // lat = 12.969173012035432
+        // lng = 79.15585925727072
+        const uluru = {lat: 12.969173012035432, lng: 79.15585925727072};
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: 'images/loc.png'
+        });
+    }
+</script>
 
 </body>
 </html>

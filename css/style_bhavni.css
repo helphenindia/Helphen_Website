@@ -564,7 +564,7 @@ figure {
   content: '';
   bottom: 0;
   left: 50%;
-  width: 100px;
+  width: 0px;
   margin-left: -50px;
   height: 2px;
   background: #10a9af;

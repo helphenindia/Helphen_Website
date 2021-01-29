@@ -35,11 +35,6 @@ a:hover {
   color: #10a9af !important;
 }
 
-.eventcat{
-  text-align: center;
-  margin-top: 100px;
-}
-
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 16px;
@@ -78,7 +73,6 @@ figure {
   margin-bottom: 0;
   z-index: 9999999;
 }
-
 
 .stuck {
   position: fixed !important;
@@ -184,7 +178,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -197,7 +191,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover_2 {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -376,7 +370,8 @@ figure {
   z-index: 2;
   font-size: 22px;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-weight: 700;
   float: left;
 }
@@ -566,7 +561,7 @@ figure {
   left: 50%;
   width: 100px;
   margin-left: -50px;
-  height: 2px;
+  height: 0px;
   background: #10a9af;
 }
 .heading-section h3 {
@@ -1473,61 +1468,35 @@ figure {
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
 
-
-/* .img-responsive:hover{
-  transform: translateY(10px);
-}
-.img-responsive:hover::before{
-  opacity: 1;
-}
-
-.img-responsive:hover .img-text{
-  opacity: 1;
-  transform: translateY(0);
-} */
-
-
-
-/*# sourceMappingURL=style.css.map */
-
-
-
-.container {
-  position: relative;
-  /* width: 50%; */
-}
-
-.img-responsive {
-  opacity: 1;
-  display: block;
-  /* width: 100%;
-  height: auto; */
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgb(255,255,255,0.65);
 }
 
-.container1:hover .img-responsive {
-  opacity: 0.3;
-}
-
-.container1:hover .middle {
+.overlay:hover{
   opacity: 1;
 }
 
 .text {
-
   color: #10a9af;
   font-size: 16px;
   padding: 16px 32px;
+  font-family: "Open Sans",Arial,sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s ease;
 }
+/*# sourceMappingURL=style.css.map */
