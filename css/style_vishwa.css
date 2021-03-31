@@ -1517,13 +1517,13 @@ figure {
   text-align: center;
 }
 
-.container1:hover .img-responsive {
+/*.container1:hover .img-responsive {
   opacity: 0.3;
 }
 
 .container1:hover .middle {
   opacity: 1;
-}
+}*/
 
 .text {
 
