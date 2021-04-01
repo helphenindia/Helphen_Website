@@ -1478,14 +1478,14 @@ figure {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background: rgb(255,255,255,0.65);
+  background: rgba(255,255,255,0.65);
 }
 
-.overlay:hover{
+/*.overlay:hover{
   opacity: 1;
-}
+}*/
 
-.text {
+/*.text {
   color: #10a9af;
   font-size: 16px;
   padding: 16px 32px;
@@ -1498,5 +1498,5 @@ figure {
   transform: translate(-50%, -50%);
   text-align: center;
   transition: 0.5s ease;
-}
+}*/
 /*# sourceMappingURL=style.css.map */
