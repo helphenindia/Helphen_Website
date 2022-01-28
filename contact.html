@@ -149,10 +149,6 @@
             </div>
         </div>
         <!-- END fh5co-contact -->
-        <div id="map" class="fh5co-map">
-        </div>
-        <!-- END map -->
-
 
         <footer>
             <div id="footer">
@@ -216,30 +212,6 @@
 
 <!-- Main JS -->
 <script src="js/main.js"></script>
-
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIe79xbyEOaA7KgogqEOOlbwUOnRxXzwE&callback=initMap&libraries=&v=weekly"
-        defer></script>
-<script>
-    // Initialize and add the map
-    function initMap() {
-        // The location of Ulur
-        // lat = 12.969173012035432
-        // lng = 79.15585925727072
-        const uluru = {lat: 12.969173012035432, lng: 79.15585925727072};
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 15,
-            center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-            icon: 'images/map.png'
-        });
-    }
-</script>
 
 </body>
 </html>
